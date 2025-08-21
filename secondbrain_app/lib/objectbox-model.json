@@ -1,0 +1,150 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7975037181421861510",
+      "lastPropertyId": "5:7287317178056688653",
+      "name": "DocumentChunk",
+      "properties": [
+        {
+          "id": "1:7556720518965940549",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8838533048450675470",
+          "name": "content",
+          "type": 9
+        },
+        {
+          "id": "3:8027945831228924960",
+          "name": "chunkIndex",
+          "type": 6
+        },
+        {
+          "id": "4:2697544654728197901",
+          "name": "embedding",
+          "type": 28,
+          "flags": 8,
+          "indexId": "1:8370301581641095341"
+        },
+        {
+          "id": "5:7287317178056688653",
+          "name": "memoryFileId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:2291054963025571713",
+          "relationTarget": "MemoryFile"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:4561559691528468526",
+      "lastPropertyId": "4:6296313971079142878",
+      "name": "Memory",
+      "properties": [
+        {
+          "id": "1:2060394553252611962",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3750016121315215111",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2437768544746520854",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:6296313971079142878",
+          "name": "createdAt",
+          "type": 10
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:2155590203574764322",
+          "name": "files",
+          "targetId": "3:7020940648041645322"
+        }
+      ]
+    },
+    {
+      "id": "3:7020940648041645322",
+      "lastPropertyId": "8:46857264150937148",
+      "name": "MemoryFile",
+      "properties": [
+        {
+          "id": "1:4619244408688750499",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4592482315729263788",
+          "name": "autoName",
+          "type": 9
+        },
+        {
+          "id": "3:6996650781958062312",
+          "name": "originalName",
+          "type": 9
+        },
+        {
+          "id": "4:4405367489932526617",
+          "name": "filePath",
+          "type": 9
+        },
+        {
+          "id": "5:5131002834754317757",
+          "name": "sizeBytes",
+          "type": 6
+        },
+        {
+          "id": "6:1453470508134308440",
+          "name": "mimeType",
+          "type": 9
+        },
+        {
+          "id": "7:3062943303223727931",
+          "name": "addedAt",
+          "type": 10
+        },
+        {
+          "id": "8:46857264150937148",
+          "name": "memoryId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "3:8027092618750551312",
+          "relationTarget": "Memory"
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:4630218674176130681",
+          "name": "chunks",
+          "targetId": "1:7975037181421861510"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "3:7020940648041645322",
+  "lastIndexId": "3:8027092618750551312",
+  "lastRelationId": "2:4630218674176130681",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

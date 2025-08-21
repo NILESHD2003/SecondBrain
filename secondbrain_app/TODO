@@ -1,0 +1,13 @@
+Today's Work
+
+1. Adding Functionality to store the API key to secure storage or shared pref.
+2. Adding functionality to make gemini call to test the gemini based embeddings and generation.
+    - Make it as singleton pattern
+    - On verify and save check the API call to ensure correctness.
+3. Add a feature to integrate Objectbox to store vector data.
+4. Integrate Hive for NoSQL storage of files and all related stuff togther in the mobiles local space.
+
+
+gemini-1.5-flash-latest
+gemini-1.5-pro
+embedding-001
